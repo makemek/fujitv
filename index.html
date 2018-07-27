@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="tvplayer/js/fastclick.js"></script>
+        <script src="tvplayer/js/player.js"></script>
+        <script src="tvplayer/js/render.js"></script>
+        <script src="tvplayer/js/vmsuicore.js"></script>
+        <script src="tvplayer/js/kn.js"></script>
+        <script src="tvplayer/js/scrolltext.js"></script>
+        <script src="tvplayer/js/fixedscroll.js"></script>
+        <script src="tvplayer/js/timezone_date.js"></script>
+        <script src="fuji.js"></script>
+        <link type="text/css" href="tvplayer/css/main.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- <marquee>We apologized for the troubles. The IDC provider maintained the servers and this made our website not accesible on 20th and 21th May of Japan time zone. We will manage to avoid the similar inconvenience in future. Sorry again.</marquee> -->
+        <div class="tv_main" >
+            <!--
+		<button onclick="VMSUI.KN({keyCode: 38})">UP</button><button onclick="VMSUI.KN({keyCode: 40})">DOWN</button><button onclick="VMSUI.KN({keyCode: 37})">LEFT</button><button onclick="VMSUI.KN({keyCode: 39})">RIGHT</button><button onclick="VMSUI.KN({keyCode: 27})">BACK</button><button onclick="VMSUI.KN({keyCode: 13})">OK</button>
+		-->
+            <div class="tv_body">
+                <div class="tv_left">
+                    <div class="tv_video">
+                        <img  id="video_player" src="images/video.jpg" width="100%" height="100%" />
+                    </div>
+                    <div id="tv_userinfo_control" class="tv_userinfo_control"></div>
+                    <!-- div class="sys_settings_panel" id="sys_settings_panel" kn_style="horizonal" kn_right=".tv_cat_list" -->
+
+                </div>
+            </div>
+            <div class="tv_cat_list tv_background" id="tv_cat_list"  kn_style="vertical" kn_left=".sys_settings_panel" kn_right=".tv_channels">
+                <!-- channel category control -->
+
+            </div>
+            <div class="tv_channels" id="tv_channels_control"  kn_style="vertical" kn_left=".tv_cat_list" kn_right=".tv_epg">
+                <!-- channel list control -->
+
+            </div>
+            <div class="tv_epg" kn_style="vertical" kn_left=".tv_channels" kn_back=".tv_channels" kn_right=".tv_epg_date">
+                <!-- EPG list control -->
+
+            </div>
+            <div class="tv_epg_date" kn_style="vertical"  kn_left=".tv_epg" kn_back=".tv_epg">
+                <!-- EPG date control -->
+
+            </div>
+        </div>
+        <div class="dark_mask"></div>
+        <div id="tv_expired_control" class="tv_userinfo_control"  kn_style="horizontal" style="display: none"></div>
+        <div class="tv_footer">
+	</div>
+    </div>
+
+  </body>
+</html>
