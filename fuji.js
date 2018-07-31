@@ -55,11 +55,11 @@ PlayerCtx.serverTime = 0;
 PlayerCtx.apiInfo = {};
 if (!window.P2PSVideo) {
     PlayerCtx.apiInfo = {
-        host: "http://livepro.fuji.live:9083",
-        rtmfp_host: "rtmfp://livepro.fuji.live:9035",
+        host: "http://23.237.36.50:9083",
+        rtmfp_host: "rtmfp://23.237.36.50:9035",
         uid: "C2D9261F3D5753E74E97EB28FE2D8B26",
         cid: "279C1F3E73BB0FE9533CAA122E491D03",
-        referer: "http://fujitv.live"
+        referer: "23.110.255.223"
     };
     PlayerCtx.uinfo_ok = true
 }
