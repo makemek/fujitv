@@ -503,18 +503,7 @@ function showExpired() {
     alert(PlayerCtx.translation.expiration_alert)
 }
 function stopVideo() {
-    PlayerCtx.playing = false;
-    if (PlayerCtx._controlChannels) {
-        PlayerCtx._controlChannels.resetLastPlay()
-    }
-    if (PlayerCtx._controlTS) {
-        PlayerCtx._controlTS.resetLastPlay()
-    }
-    if (window.P2PSVideo) {
-        P2PSVideo.stopVideo()
-    } else {
-        $(".tv_video").html('<img  id="video_player" src="images/video.jpg" width="100%" height="100%" />')
-    }
+
 }
 function switchFull(a) {
     if (window.P2PSVideo) {
