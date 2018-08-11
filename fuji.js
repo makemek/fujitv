@@ -126,20 +126,20 @@ $(document.body).on("contextmenu", function() {
         setInterval(updateUserInfo, 500)
     }
     if (c.code == "SERVICE_EXPIRED") {
-        alert("Your subscription is expired, please renew in time.");
+        // alert("Your subscription is expired, please renew in time.");
         window.top.location.href = "https://fujitv.live/subscriptions";
         return
     } else {
         if (c.code == "SERVICE_DISABLED") {
-            alert("Your subscription is disabled, please contact the vendor");
+            // alert("Your subscription is disabled, please contact the vendor");
             return
         } else {
             if (c.code == "BANED") {
-                alert("You have tried to access too many times, please retry after 5 minutes");
+                // alert("You have tried to access too many times, please retry after 5 minutes");
                 return
             } else {
                 if (c.code != "OK") {
-                    alert("Sorry, an unexpected error occurs, please try again later. \nERRCODE: " + c.code + "\nMessage: " + c.msg);
+                    // alert("Sorry, an unexpected error occurs, please try again later. \nERRCODE: " + c.code + "\nMessage: " + c.msg);
                     return
                 }
             }
@@ -485,7 +485,7 @@ function checkSinglePlay() {
                 stopVideo();
                 clearTimeout(gSinglePlayTimer);
                 gSinglePlayTimer = null;
-                alert("Your account is being used on another device, Only one play session is allowed for one account.");
+                // alert("Your account is being used on another device, Only one play session is allowed for one account.");
                 return
             }
         }
